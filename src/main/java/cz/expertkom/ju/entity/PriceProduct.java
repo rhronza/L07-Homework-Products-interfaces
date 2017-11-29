@@ -1,5 +1,7 @@
 package cz.expertkom.ju.entity;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,6 +28,12 @@ public class PriceProduct {
 	
 	@Column(name="priceWithOutVAT")
 	private String priceWithOutVAT;
+
+	@Column(name="insertedDateTime")
+	private LocalDateTime insertedDateTime;
+	
+	@Column(name="updatedDateTime")
+	private LocalDateTime updatedDateTime;
 	
 	/* -------------------------------------------------------- */
 
@@ -69,4 +77,19 @@ public class PriceProduct {
 		this.priceWithOutVAT = priceWithOutVAT;
 	}
 
+	public LocalDateTime getInsertedDateTime() {
+		return insertedDateTime;
+	}
+
+	public void setInsertedDateTime(LocalDateTime insertedDateTime) {
+		this.insertedDateTime = insertedDateTime;
+	}
+
+	public LocalDateTime getUpdatedDateTime() {
+		return updatedDateTime;
+	}
+
+	public void setUpdatedDateTime(LocalDateTime updatedDateTime) {
+		this.updatedDateTime = updatedDateTime;
+	}
 }

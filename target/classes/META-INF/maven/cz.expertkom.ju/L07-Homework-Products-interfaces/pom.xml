@@ -3,6 +3,9 @@
   <groupId>cz.expertkom.ju</groupId>
   <version>0.0.1-SNAPSHOT</version>
   <artifactId>L07-Homework-Products-interfaces</artifactId>
+  <properties>
+  	<java.version>1.8</java.version>
+  </properties>
   <dependencies>
   			<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
 		<dependency>
