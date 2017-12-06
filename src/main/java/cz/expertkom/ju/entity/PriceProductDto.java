@@ -1,6 +1,7 @@
 package cz.expertkom.ju.entity;
 
-import java.time.LocalDateTime;
+import java.util.Calendar;
+import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -11,8 +12,8 @@ public class PriceProductDto {
 	private String productURI;
 	private String priceWithVAT;
 	private String priceWithOutVAT;
-	private LocalDateTime insertedDateTime;
-	private LocalDateTime updatedDateTime;
+	private Date insertedDateTime;
+	private Calendar updatedDateTime;
 	
 	/* --------------------------------------------------------- */
 	
@@ -40,17 +41,12 @@ public class PriceProductDto {
 	public void setPriceWithOutVAT(String priceWithOutVAT) {
 		this.priceWithOutVAT = priceWithOutVAT;
 	}
-	public LocalDateTime getInsertedDateTime() {
+	public Date getInsertedDateTime() {
 		return insertedDateTime;
 	}
-	public void setInsertedDateTime(LocalDateTime insertedDateTime) {
+	public void setInsertedDateTime(Date insertedDateTime) {
 		this.insertedDateTime = insertedDateTime;
 	}
-	public LocalDateTime getUpdatedDateTime() {
-		return updatedDateTime;
-	}
-	public void setUpdatedDateTime(LocalDateTime updatedDateTime) {
-		this.updatedDateTime = updatedDateTime;
-	}
+	
 	
 }

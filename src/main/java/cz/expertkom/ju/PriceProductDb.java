@@ -1,6 +1,5 @@
 package cz.expertkom.ju;
 
-import cz.expertkom.ju.entity.PriceProduct;
 import cz.expertkom.ju.entity.PriceProductDto;
 import cz.expertkom.ju.entity.PriceProducts;
 

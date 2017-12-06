@@ -1,6 +1,7 @@
 package cz.expertkom.ju.entity;
 
-import java.time.LocalDateTime;
+import java.util.Calendar;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -30,10 +31,10 @@ public class PriceProduct {
 	private String priceWithOutVAT;
 
 	@Column(name="insertedDateTime")
-	private LocalDateTime insertedDateTime;
+	private Date insertedDateTime;
 	
 	@Column(name="updatedDateTime")
-	private LocalDateTime updatedDateTime;
+	private Calendar updatedDateTime;
 	
 	/* -------------------------------------------------------- */
 
@@ -77,19 +78,23 @@ public class PriceProduct {
 		this.priceWithOutVAT = priceWithOutVAT;
 	}
 
-	public LocalDateTime getInsertedDateTime() {
+	public Date getInsertedDateTime() {
 		return insertedDateTime;
 	}
 
-	public void setInsertedDateTime(LocalDateTime insertedDateTime) {
+	public void setInsertedDateTime(Date insertedDateTime) {
 		this.insertedDateTime = insertedDateTime;
 	}
 
-	public LocalDateTime getUpdatedDateTime() {
+	public Calendar getUpdatedDateTime() {
 		return updatedDateTime;
 	}
 
-	public void setUpdatedDateTime(LocalDateTime updatedDateTime) {
+	public void setUpdatedDateTime(Calendar updatedDateTime) {
 		this.updatedDateTime = updatedDateTime;
 	}
+
+	
+
+	
 }
